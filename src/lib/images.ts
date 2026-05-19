@@ -1,0 +1,52 @@
+export const images = {
+  logo: '/images/logo.png',
+  mobileMenuLogo: '/images/mobile-menu-logo.png',
+  footerLogo: '/images/footer-logo.png',
+  hero: '/images/hero.png',
+  gallery: [
+    '/images/gallery-1.png',
+    '/images/gallery-2.png',
+    '/images/gallery-3.png',
+    '/images/gallery-4.png',
+  ],
+  featureHouse: '/images/feature-house.png',
+  whyChoose: '/images/why-choose.png',
+  ctaBg: '/images/cta-bg.png',
+  testimonialAvatar: '/images/testimonial-avatar.png',
+  services: [
+    '/images/service-1.png',
+    '/images/service-2.png',
+    '/images/service-3.png',
+    '/images/service-4.png',
+    '/images/service-5.png',
+    '/images/service-6.png',
+    '/images/service-7.png',
+    '/images/service-8.png',
+    '/images/service-9.png',
+  ],
+  servicesPage: {
+    hero: '/images/services-hero.png',
+    heroMobile: '/images/services-hero-mobile.png',
+    cta: '/images/services-cta.png',
+    howItWorks: [
+      '/images/services/how-it-works-1.png',
+      '/images/services/how-it-works-2.png',
+      '/images/services/how-it-works-3.png',
+      '/images/services/how-it-works-4.png',
+    ],
+  },
+  contactPage: {
+    hero: '/images/contact-hero-alt.png',
+  },
+  aboutPage: {
+    hero: '/images/about/hero.png',
+    whoWeAre: {
+      back: '/images/about/who-we-are-2.png',
+      front: '/images/about/who-we-are-1.png',
+    },
+    values: '/images/about/values.png',
+    experience: ['/images/about/experience-1.png', '/images/about/experience-2.png'],
+    cta: '/images/cta-bg.png',
+    ctaMobile: '/images/about/cta-mobile.png',
+  },
+} as const
