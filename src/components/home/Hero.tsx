@@ -15,6 +15,9 @@ export function Hero() {
       <motion.img
         src={images.hero}
         alt=""
+        loading="eager"
+        fetchPriority="high"
+        decoding="sync"
         className="absolute inset-0 size-full object-cover object-[46%_center] lg:object-center"
         initial={prefersReducedMotion ? false : { scale: 1.08 }}
         animate={prefersReducedMotion ? undefined : { scale: 1 }}

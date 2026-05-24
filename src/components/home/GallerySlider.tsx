@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState, type CSSProperties } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
+import { AppImage } from '@/components/ui/AppImage'
 import { images } from '@/lib/images'
 import { SliderNav } from '@/components/ui/SliderNav'
 import { cn } from '@/lib/cn'
@@ -157,7 +158,7 @@ export function GallerySlider({ className }: GallerySliderProps) {
               className="shrink-0 overflow-hidden rounded-[20px]"
               style={{ width: slideWidth, height: slideHeight }}
             >
-              <img
+              <AppImage
                 src={slide.src}
                 alt={i === position ? slide.alt : ''}
                 className="size-full object-cover"

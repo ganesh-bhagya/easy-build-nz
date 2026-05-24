@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { MotionItem, MotionReveal, MotionSection } from '@/components/motion'
 import { images } from '@/lib/images'
 
@@ -19,7 +20,7 @@ export function FeatureSection() {
         </MotionReveal>
         <MotionItem variant="slideInRight">
           <div className="aspect-square w-full overflow-hidden rounded-[20px] lg:aspect-auto">
-            <img
+            <AppImage
               src={images.featureHouse}
               alt="Modern home exterior"
               className="size-full object-cover lg:w-full"

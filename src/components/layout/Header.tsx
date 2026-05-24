@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { motion, useReducedMotion } from 'framer-motion'
+import { AppImage } from '@/components/ui/AppImage'
 import { navLinks } from '@/data/home'
 import { images } from '@/lib/images'
 import { MobileNav } from '@/components/layout/MobileNav'
@@ -19,9 +20,10 @@ export function Header() {
     >
       <div className="mx-auto flex h-[68px] max-w-[1728px] items-center justify-between px-[13px] lg:h-24 lg:px-[100px]">
         <Link to="/" className="shrink-0">
-          <img
+          <AppImage
             src={images.logo}
             alt="Easy Build NZ"
+            priority
             className="h-[75px] w-[149px] object-contain object-left lg:h-[72px] lg:w-auto lg:max-w-[301px]"
           />
         </Link>

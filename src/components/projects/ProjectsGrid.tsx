@@ -1,10 +1,11 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { projectRows, projects } from '@/data/projects'
 import { MotionItem, MotionReveal } from '@/components/motion'
 
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="aspect-[361/306] w-full overflow-hidden rounded-[20px] bg-[#d9d9d9] lg:aspect-[740/431]">
-      <img src={src} alt={alt} className="block size-full object-cover" />
+      <AppImage src={src} alt={alt} className="block size-full object-cover" />
     </div>
   )
 }

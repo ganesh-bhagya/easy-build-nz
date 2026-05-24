@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useReducedMotion } from 'framer-motion'
+import { AppImage } from '@/components/ui/AppImage'
 import { footerExplore, footerServices } from '@/data/home'
 import { images } from '@/lib/images'
 import { defaultTransition, fadeInUp } from '@/components/motion'
@@ -41,7 +42,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1728px] px-4 py-12 lg:px-[120px] lg:py-16">
         <div className="flex flex-col items-center gap-10 text-center lg:grid lg:grid-cols-4 lg:items-start lg:gap-12 lg:text-left">
           <div className="flex flex-col items-center lg:items-start">
-            <img
+            <AppImage
               src={images.footerLogo}
               alt="Easy Build NZ"
               className="mb-6 h-auto w-[229px] object-contain lg:mb-8 lg:max-w-[280px]"

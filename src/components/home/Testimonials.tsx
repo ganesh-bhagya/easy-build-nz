@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { AppImage } from '@/components/ui/AppImage'
 import { testimonials } from '@/data/home'
 import { SectionLabel } from '@/components/home/SectionLabel'
 import {
@@ -61,7 +62,7 @@ export function Testimonials() {
                     </blockquote>
                   </div>
                   <div className="mt-6 flex flex-col items-center gap-2 lg:mt-8 lg:flex-row lg:items-center lg:gap-4">
-                    <img
+                    <AppImage
                       src={current.avatar}
                       alt=""
                       className="size-[51px] rounded-full object-cover lg:size-[83px]"

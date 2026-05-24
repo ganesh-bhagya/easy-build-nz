@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { images } from '@/lib/images'
 import { MotionItem, MotionReveal } from '@/components/motion'
 import { cn } from '@/lib/cn'
@@ -20,7 +21,7 @@ export function GalleryGrid({ className }: GalleryGridProps) {
       {images.gallery.map((src, i) => (
         <MotionItem key={src} variant="scaleIn">
           <div className="aspect-[192/334] overflow-hidden rounded-[20px] bg-[#d9d9d9]">
-            <img
+            <AppImage
               src={src}
               alt={`Project showcase ${i + 1}`}
               className="size-full object-cover"

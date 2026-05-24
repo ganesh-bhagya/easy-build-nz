@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { services } from '@/data/home'
 import { SectionLabel } from '@/components/home/SectionLabel'
 import { MotionItem, MotionReveal, MotionSection } from '@/components/motion'
@@ -32,7 +33,7 @@ export function ServicesSection() {
           <MotionItem key={service.title}>
             <article className="flex flex-col gap-5 lg:h-full lg:gap-3">
               <div className="aspect-[359/237] w-full shrink-0 overflow-hidden rounded-[20px] bg-[#d9d9d9] lg:aspect-[487/552]">
-                <img
+                <AppImage
                   src={service.image}
                   alt=""
                   className="block size-full object-cover"

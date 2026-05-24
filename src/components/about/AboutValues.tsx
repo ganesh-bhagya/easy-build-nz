@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { AppImage } from '@/components/ui/AppImage'
 import { aboutValues } from '@/data/about'
 import { MotionItem, MotionReveal, defaultTransition } from '@/components/motion'
 import { images } from '@/lib/images'
@@ -13,7 +14,7 @@ export function AboutValues() {
       <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:items-start lg:gap-12">
         <MotionItem variant="slideInLeft" className="hidden lg:block">
           <div className="aspect-[689/954] w-full overflow-hidden rounded-[20px]">
-            <img
+            <AppImage
               src={images.aboutPage.values}
               alt=""
               className="block size-full object-cover"

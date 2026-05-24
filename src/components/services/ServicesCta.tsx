@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { Button } from '@/components/ui/Button'
 import { MotionItem, MotionReveal } from '@/components/motion'
 import { images } from '@/lib/images'
@@ -10,7 +11,7 @@ export function ServicesCta() {
         stagger={0.12}
         delayChildren={0.15}
       >
-        <img
+        <AppImage
           src={images.servicesPage.cta}
           alt=""
           className="absolute inset-0 size-full object-cover object-center"

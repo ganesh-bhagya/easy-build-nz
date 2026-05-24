@@ -10,6 +10,8 @@ export function ServicesHero() {
       <motion.img
         src={images.servicesPage.heroMobile}
         alt=""
+        loading="eager"
+        decoding="sync"
         className="absolute left-1/2 top-0 h-full w-[199%] max-w-none -translate-x-[40%] object-cover lg:hidden"
         initial={prefersReducedMotion ? false : { scale: 1.06 }}
         animate={prefersReducedMotion ? undefined : { scale: 1 }}
@@ -18,6 +20,8 @@ export function ServicesHero() {
       <motion.img
         src={images.servicesPage.hero}
         alt=""
+        loading="eager"
+        decoding="sync"
         className="absolute inset-0 hidden size-full object-cover lg:block"
         initial={prefersReducedMotion ? false : { scale: 1.06 }}
         animate={prefersReducedMotion ? undefined : { scale: 1 }}

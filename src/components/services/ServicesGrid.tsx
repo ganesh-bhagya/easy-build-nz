@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { services } from '@/data/home'
 import { MotionItem, MotionReveal } from '@/components/motion'
 
@@ -17,7 +18,7 @@ export function ServicesGrid() {
                   index >= 2 ? 'aspect-[359/257]' : 'aspect-[359/237]'
                 }`}
               >
-                <img
+                <AppImage
                   src={service.image}
                   alt=""
                   className="block size-full object-cover"

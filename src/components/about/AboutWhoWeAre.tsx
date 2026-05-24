@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { SectionLabel } from '@/components/home/SectionLabel'
 import { MotionItem, MotionReveal } from '@/components/motion'
 import { images } from '@/lib/images'
@@ -41,14 +42,14 @@ export function AboutWhoWeAre() {
         <MotionReveal className="mt-8 w-full max-w-[361px] lg:hidden" delayChildren={0.15}>
           <div className="flex justify-between">
             <MotionItem className="h-[327px] w-[174px] overflow-hidden rounded-[15px]">
-              <img
+              <AppImage
                 src={images.aboutPage.whoWeAre.back}
                 alt="Construction worker on roof with scaffolding"
                 className="block size-full object-cover"
               />
             </MotionItem>
             <MotionItem className="h-[327px] w-[174px] overflow-hidden rounded-[15px]">
-              <img
+              <AppImage
                 src={images.aboutPage.whoWeAre.front}
                 alt="Easy Build NZ team members on site"
                 className="block size-full object-cover"
@@ -56,7 +57,7 @@ export function AboutWhoWeAre() {
             </MotionItem>
           </div>
           <MotionItem className="mt-5 aspect-[361/322] w-full overflow-hidden rounded-[20px]">
-            <img
+            <AppImage
               src={images.aboutPage.values}
               alt="Modern home built by Easy Build NZ"
               className="block size-full object-cover"
@@ -70,14 +71,14 @@ export function AboutWhoWeAre() {
           delayChildren={0.15}
         >
           <MotionItem className="absolute inset-y-0 left-0 z-0 w-[400px] overflow-hidden rounded-[20px]">
-            <img
+            <AppImage
               src={images.aboutPage.whoWeAre.back}
               alt="Construction worker on roof with scaffolding"
               className="block size-full object-cover"
             />
           </MotionItem>
           <MotionItem className="absolute inset-y-0 right-0 z-10 w-[400px] overflow-hidden rounded-[20px]">
-            <img
+            <AppImage
               src={images.aboutPage.whoWeAre.front}
               alt="Easy Build NZ team members on site"
               className="block size-full object-cover"

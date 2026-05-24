@@ -1,5 +1,6 @@
 import { aboutFeaturedStat, aboutStats } from '@/data/about'
 import { MotionItem, MotionReveal } from '@/components/motion'
+import { CountUp } from '@/components/ui/CountUp'
 
 export function AboutStats() {
   const [years, projects, satisfaction, commercial] = aboutStats
@@ -10,7 +11,9 @@ export function AboutStats() {
       <MotionReveal className="lg:hidden" stagger={0.06}>
         <MotionItem className="relative flex min-h-[162px]">
           <div className="flex-1 pl-12">
-            <p className="text-[40px] leading-none">{aboutFeaturedStat.value}</p>
+            <p className="text-[40px] leading-none">
+              <CountUp value={aboutFeaturedStat.value} />
+            </p>
             <p className="mt-2 text-xl leading-tight">{aboutFeaturedStat.label}</p>
           </div>
           <div
@@ -18,7 +21,9 @@ export function AboutStats() {
             aria-hidden
           />
           <div className="flex-1 pl-6 pt-6 text-[#4f4f4f]">
-            <p className="text-[40px] leading-none">{years.value}</p>
+            <p className="text-[40px] leading-none">
+              <CountUp value={years.value} />
+            </p>
             <p className="mt-2 max-w-[7rem] text-xl leading-tight">{years.label}</p>
           </div>
         </MotionItem>
@@ -32,11 +37,15 @@ export function AboutStats() {
           />
           <div className="grid grid-cols-2 gap-y-12 pb-4">
             <div className="text-[#4f4f4f]">
-              <p className="text-[40px] leading-none">{projects.value}</p>
+              <p className="text-[40px] leading-none">
+                <CountUp value={projects.value} />
+              </p>
               <p className="mt-2 max-w-[6.5rem] text-xl leading-tight">{projects.label}</p>
             </div>
             <div className="pl-4 text-[#4f4f4f]">
-              <p className="text-[40px] leading-none">{satisfaction.value}</p>
+              <p className="text-[40px] leading-none">
+                <CountUp value={satisfaction.value} />
+              </p>
               <p className="mt-2 text-xl leading-tight">{satisfaction.label}</p>
             </div>
             <div className="col-span-2 relative pt-2">
@@ -46,7 +55,9 @@ export function AboutStats() {
               />
               <div className="flex gap-10 pt-10 text-[#4f4f4f]">
                 <div>
-                  <p className="text-[40px] leading-none">{commercial.value}</p>
+                  <p className="text-[40px] leading-none">
+                    <CountUp value={commercial.value} />
+                  </p>
                   <p className="mt-2 max-w-[7.5rem] text-xl leading-tight">
                     {commercial.label}
                   </p>
@@ -61,7 +72,7 @@ export function AboutStats() {
       <MotionReveal className="hidden text-center lg:block">
         <MotionItem>
           <p className="text-6xl font-normal leading-none lg:text-[100px]">
-            {aboutFeaturedStat.value}
+            <CountUp value={aboutFeaturedStat.value} duration={2.2} />
           </p>
           <p className="mt-1 text-2xl lg:text-[50px]">{aboutFeaturedStat.label}</p>
         </MotionItem>
@@ -77,7 +88,9 @@ export function AboutStats() {
             key={stat.label}
             className={`px-0 lg:px-8 ${index === 0 ? 'border-r border-[#d9d9d9] pr-6 lg:border-r' : ''} ${index === 1 ? 'pl-6 lg:pl-8' : ''}`}
           >
-            <p className="text-5xl font-normal text-[#4f4f4f] lg:text-[80px]">{stat.value}</p>
+            <p className="text-5xl font-normal text-[#4f4f4f] lg:text-[80px]">
+              <CountUp value={stat.value} />
+            </p>
             <p className="mt-1 text-sm text-[#4f4f4f] lg:text-[30px]">{stat.label}</p>
           </MotionItem>
         ))}

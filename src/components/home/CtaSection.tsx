@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { Button } from '@/components/ui/Button'
 import { MotionItem, MotionReveal, MotionSection } from '@/components/motion'
 import { images } from '@/lib/images'
@@ -6,7 +7,7 @@ export function CtaSection() {
   return (
     <MotionSection className="mx-auto max-w-[1728px] px-4 py-12 lg:px-[100px] lg:pb-24">
       <div className="relative min-h-[659px] w-full overflow-hidden rounded-[20px] lg:aspect-[1528/624] lg:min-h-0">
-        <img
+        <AppImage
           src={images.ctaBg}
           alt=""
           className="absolute inset-0 size-full object-cover"

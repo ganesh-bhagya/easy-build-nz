@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
+import { AppImage } from '@/components/ui/AppImage'
 import { mobileNavLinks } from '@/data/home'
 import { images } from '@/lib/images'
 import {
@@ -78,7 +79,7 @@ export function MobileNav() {
                 variants={getStaggerContainer(0.08, 0.12)}
               >
                 <motion.div variants={fadeInUp} transition={defaultTransition}>
-                  <img
+                  <AppImage
                     src={images.mobileMenuLogo}
                     alt="Easy Build NZ"
                     className="h-[147px] w-[162px] object-contain"

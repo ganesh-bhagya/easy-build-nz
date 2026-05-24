@@ -7,6 +7,7 @@ import {
   MotionSection,
   defaultTransition,
 } from '@/components/motion'
+import { AppImage } from '@/components/ui/AppImage'
 import { images } from '@/lib/images'
 import { cn } from '@/lib/cn'
 
@@ -18,7 +19,7 @@ export function WhyChooseUs() {
       <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:items-start lg:gap-16">
         <MotionItem variant="slideInLeft" className="lg:col-span-1">
           <div className="aspect-[358/403] w-full overflow-hidden rounded-[20px] lg:aspect-[759/860]">
-            <img
+            <AppImage
               src={images.whyChoose}
               alt="Modern property with swimming pool and contemporary architecture"
               className="size-full object-cover"

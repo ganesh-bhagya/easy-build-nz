@@ -10,6 +10,8 @@ export function ContactHero() {
       <motion.img
         src={images.contactPage.hero}
         alt=""
+        loading="eager"
+        decoding="sync"
         className="absolute left-1/2 top-0 h-full w-[159%] max-w-none -translate-x-[30%] object-cover lg:inset-0 lg:size-full lg:translate-x-0"
         initial={prefersReducedMotion ? false : { scale: 1.06 }}
         animate={prefersReducedMotion ? undefined : { scale: 1 }}

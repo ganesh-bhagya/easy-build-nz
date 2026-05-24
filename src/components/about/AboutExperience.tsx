@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { MotionItem, MotionReveal } from '@/components/motion'
 import { images } from '@/lib/images'
 
@@ -7,7 +8,7 @@ export function AboutExperience() {
       <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[371px_1fr_371px] lg:items-stretch lg:gap-6">
         <MotionItem variant="slideInLeft" className="order-1 lg:order-none">
           <div className="aspect-[361/337] w-full max-w-[361px] overflow-hidden rounded-[20px] lg:aspect-[371/695] lg:max-w-none">
-            <img
+            <AppImage
               src={images.aboutPage.experience[0]}
               alt=""
               className="block size-full object-cover"
@@ -38,7 +39,7 @@ export function AboutExperience() {
 
         <MotionItem variant="slideInRight" className="order-3 lg:order-none">
           <div className="aspect-[361/337] w-full max-w-[361px] overflow-hidden rounded-[20px] lg:aspect-[371/695] lg:max-w-none">
-            <img
+            <AppImage
               src={images.aboutPage.experience[1]}
               alt=""
               className="block size-full object-cover"

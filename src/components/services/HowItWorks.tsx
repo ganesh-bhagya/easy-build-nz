@@ -1,3 +1,4 @@
+import { AppImage } from '@/components/ui/AppImage'
 import { howItWorksSteps } from '@/data/services'
 import { MotionItem, MotionReveal } from '@/components/motion'
 
@@ -38,7 +39,7 @@ export function HowItWorks() {
               </div>
 
               <div className="mx-[23px] mb-[23px] mt-auto h-[162px] shrink-0 overflow-hidden rounded-[20px] lg:absolute lg:inset-y-[25px] lg:right-[25px] lg:mx-0 lg:mb-0 lg:mt-0 lg:h-auto lg:w-[361px]">
-                <img
+                <AppImage
                   src={step.image}
                   alt=""
                   className="block size-full object-cover"

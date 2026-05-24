@@ -11,6 +11,8 @@ export function ProjectsHero() {
       <motion.img
         src={images.projectsPage.heroMobile}
         alt=""
+        loading="eager"
+        decoding="sync"
         className="absolute left-1/2 top-0 h-full w-[130%] max-w-none -translate-x-[35%] object-cover lg:hidden"
         initial={prefersReducedMotion ? false : { scale: 1.06 }}
         animate={prefersReducedMotion ? undefined : { scale: 1 }}
@@ -19,6 +21,8 @@ export function ProjectsHero() {
       <motion.img
         src={images.projectsPage.hero}
         alt=""
+        loading="eager"
+        decoding="sync"
         className="absolute inset-0 hidden size-full object-cover lg:block"
         initial={prefersReducedMotion ? false : { scale: 1.06 }}
         animate={prefersReducedMotion ? undefined : { scale: 1 }}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { AppImage } from '@/components/ui/AppImage'
 import { Button } from '@/components/ui/Button'
 import { MotionItem, MotionReveal } from '@/components/motion'
 import { images } from '@/lib/images'
@@ -10,12 +11,12 @@ export function AboutCta() {
         className="relative mx-auto min-h-[624px] w-full max-w-[361px] overflow-hidden rounded-[20px] lg:mx-0 lg:max-w-none lg:aspect-[1528/624] lg:min-h-0"
         stagger={0.1}
       >
-        <img
+        <AppImage
           src={images.aboutPage.ctaMobile}
           alt=""
           className="absolute inset-0 size-full object-cover lg:hidden"
         />
-        <img
+        <AppImage
           src={images.aboutPage.cta}
           alt=""
           className="absolute inset-0 hidden size-full object-cover lg:block"
