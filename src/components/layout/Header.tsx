@@ -32,11 +32,7 @@ export function Header() {
               to={link.href}
               className={cn(
                 'text-xl font-normal uppercase transition-colors hover:text-primary',
-                (link.href === '/services' && pathname === '/services') ||
-                (link.href === '/contact' && pathname === '/contact') ||
-                (link.href === '/about' && pathname === '/about')
-                  ? 'text-primary'
-                  : 'text-foreground',
+                pathname === link.href ? 'text-primary' : 'text-foreground',
               )}
             >
               {link.label}

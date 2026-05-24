@@ -49,4 +49,16 @@ export const images = {
     cta: '/images/cta-bg.png',
     ctaMobile: '/images/about/cta-mobile.png',
   },
+  projectsPage: {
+    hero: '/images/projects/hero.png',
+    heroMobile: '/images/projects/hero-mobile.png',
+    items: [
+      '/images/projects/project-1.png',
+      '/images/projects/project-2.png',
+      '/images/projects/project-3.png',
+      '/images/projects/project-4.png',
+      '/images/projects/project-5.png',
+      '/images/projects/project-6.png',
+    ],
+  },
 } as const

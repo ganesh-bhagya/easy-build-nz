@@ -3,6 +3,7 @@ import { HomePage } from '@/pages/HomePage'
 import { ServicesPage } from '@/pages/ServicesPage'
 import { ContactPage } from '@/pages/ContactPage'
 import { AboutPage } from '@/pages/AboutPage'
+import { ProjectsPage } from '@/pages/ProjectsPage'
 import { ScrollToTop } from '@/components/layout/ScrollToTop'
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
     </BrowserRouter>
   )
