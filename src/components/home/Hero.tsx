@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Button } from '@/components/ui/Button'
 import { images } from '@/lib/images'
@@ -54,9 +55,11 @@ export function Hero() {
             across New Zealand.
           </motion.p>
           <motion.div variants={fadeInUp} transition={defaultTransition}>
-            <Button variant="secondary" size="sm" className="mt-[25px] lg:mt-5">
-              Get a Free Quote
-            </Button>
+            <Link to="/contact" className="inline-block mt-[25px] lg:mt-5">
+              <Button variant="secondary" size="sm">
+                Get a Free Quote
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { AppImage } from '@/components/ui/AppImage'
 import { Button } from '@/components/ui/Button'
 import { MotionItem, MotionReveal } from '@/components/motion'
@@ -31,12 +32,14 @@ export function ServicesCta() {
             </p>
           </MotionItem>
           <MotionItem variant="fadeIn">
-            <Button
-              size="sm"
-              className="h-[50px] min-w-[201px] px-7 text-base lg:h-[59px] lg:min-w-[268px] lg:px-10 lg:text-xl"
-            >
-              Get Your Free Quote
-            </Button>
+            <Link to="/contact" className="inline-block">
+              <Button
+                size="sm"
+                className="h-[50px] min-w-[201px] px-7 text-base lg:h-[59px] lg:min-w-[268px] lg:px-10 lg:text-xl"
+              >
+                Get Your Free Quote
+              </Button>
+            </Link>
           </MotionItem>
         </div>
       </MotionReveal>

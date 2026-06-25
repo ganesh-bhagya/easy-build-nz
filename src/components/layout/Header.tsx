@@ -18,13 +18,13 @@ export function Header() {
       animate={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
       transition={defaultTransition}
     >
-      <div className="mx-auto flex h-[68px] max-w-[1728px] items-center justify-between px-[13px] lg:h-24 lg:px-[100px]">
+      <div className="mx-auto flex h-[76px] max-w-[1728px] items-center justify-between px-[13px] lg:h-24 lg:px-[100px]">
         <Link to="/" className="shrink-0">
           <AppImage
             src={images.logo}
             alt="Easy Build NZ"
             priority
-            className="h-[75px] w-[149px] object-contain object-left lg:h-[72px] lg:w-auto lg:max-w-[301px]"
+            className="h-auto w-[200px] object-contain object-left sm:w-[220px] lg:h-[90px] lg:w-auto lg:max-w-[301px]"
           />
         </Link>
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">

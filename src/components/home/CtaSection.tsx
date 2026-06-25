@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { AppImage } from '@/components/ui/AppImage'
 import { Button } from '@/components/ui/Button'
 import { MotionItem, MotionReveal, MotionSection } from '@/components/motion'
@@ -25,9 +26,9 @@ export function CtaSection() {
             </p>
           </MotionItem>
           <MotionItem>
-            <Button size="sm" className="mt-6 w-fit lg:mt-8">
-              Get Your Free Quote Today
-            </Button>
+            <Link to="/contact" className="mt-6 inline-block w-fit lg:mt-8">
+              <Button size="sm">Get Your Free Quote Today</Button>
+            </Link>
           </MotionItem>
         </MotionReveal>
       </div>

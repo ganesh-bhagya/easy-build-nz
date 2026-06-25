@@ -18,15 +18,17 @@ export function ContactIntro() {
           </p>
         </MotionItem>
         <MotionItem>
-          <div className="mx-auto mt-8 max-w-[241px] text-center text-lg font-light capitalize leading-relaxed lg:mt-10 lg:max-w-none lg:text-[30px]">
-            <p>Location: {contactInfo.location}</p>
-            <p className="mt-1">Phone: {contactInfo.phone}</p>
+          <div className="mx-auto mt-8 max-w-[320px] text-center text-lg font-light leading-relaxed lg:mt-10 lg:max-w-[640px] lg:text-[30px]">
+            <p>Address: {contactInfo.address}</p>
+            <p className="mt-1">
+              Phone:{' '}
+              <a href={`tel:${contactInfo.phoneHref}`} className="hover:text-primary">
+                {contactInfo.phone}
+              </a>
+            </p>
             <p className="mt-1">
               Email:{' '}
-              <a
-                href={`mailto:${contactInfo.email}`}
-                className="lowercase hover:text-primary"
-              >
+              <a href={`mailto:${contactInfo.email}`} className="hover:text-primary">
                 {contactInfo.email}
               </a>
             </p>

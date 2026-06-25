@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useReducedMotion } from 'framer-motion'
 import { AppImage } from '@/components/ui/AppImage'
+import { contactInfo } from '@/data/contact'
 import { footerExplore, footerServices } from '@/data/home'
 import { images } from '@/lib/images'
 import { defaultTransition, fadeInUp } from '@/components/motion'
@@ -91,13 +92,18 @@ export function Footer() {
               Contact Info
             </h3>
             <p className="space-y-1 text-base font-normal lg:text-xl">
-              <span className="block">📍 New Zealand</span>
-              <span className="block">📞 +64 XXX XXX XXX</span>
+              <span className="block">📍 {contactInfo.address}</span>
               <a
-                href="mailto:info@easybuildnz.co.nz"
+                href={`tel:${contactInfo.phoneHref}`}
                 className="block hover:text-primary"
               >
-                ✉ info@easybuildnz.co.nz
+                📞 {contactInfo.phone}
+              </a>
+              <a
+                href={`mailto:${contactInfo.email}`}
+                className="block hover:text-primary"
+              >
+                ✉ {contactInfo.email}
               </a>
             </p>
           </div>

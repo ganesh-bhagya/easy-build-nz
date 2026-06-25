@@ -1,7 +1,8 @@
 export const contactInfo = {
-  location: 'New Zealand',
-  phone: '+64 XXX XXX XXX',
-  email: 'info@easybuildnz.co.nz',
+  address: '327 Racecourse Road, Waverley, Invercargill, 9810, New Zealand',
+  phone: '+64 20 445 0738',
+  phoneHref: '+64204450738',
+  email: 'contact@easybuildnz.co.nz',
 } as const
 
 export const contactFormFields = [

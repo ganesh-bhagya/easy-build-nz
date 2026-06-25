@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/Button'
 import { GalleryGrid } from '@/components/home/GalleryGrid'
 import { GallerySlider } from '@/components/home/GallerySlider'
@@ -15,9 +16,9 @@ export function IntroSection() {
           <h2 className="max-w-[329px] text-[30px] font-normal leading-tight lg:max-w-[591px] lg:text-[40px]">
             Your Trusted Building Partner in New Zealand
           </h2>
-          <Button size="sm" className="w-fit shrink-0 self-start lg:mt-2">
-            More About Us
-          </Button>
+          <Link to="/about" className="w-fit shrink-0 self-start lg:mt-2">
+            <Button size="sm">More About Us</Button>
+          </Link>
         </MotionItem>
         <MotionItem>
           <p className="mt-4 max-w-[289px] text-sm font-light leading-relaxed lg:mt-8 lg:max-w-[851px] lg:text-xl">

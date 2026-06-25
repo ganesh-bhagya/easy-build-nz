@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "optimize-images": "node scripts/optimize-images.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "npm run dev --prefix server",
+    "server:start": "npm run start --prefix server"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
